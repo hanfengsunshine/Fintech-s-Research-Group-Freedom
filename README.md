@@ -6,3 +6,4 @@
   - http://cn.mikecrm.com/Q2sOt6r <bar>
  
  - https://www.jiqizhixin.com/articles/2017-11-21-3
+ Exploiting Topic based Twitter Sentiment for Stock Prediction \
