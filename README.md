@@ -7,3 +7,5 @@
  
  - https://www.jiqizhixin.com/articles/2017-11-21-3
  Exploiting Topic based Twitter Sentiment for Stock Prediction \
+ 
+- https://www.sciencedirect.com/science/article/pii/S1084804517303247 \
