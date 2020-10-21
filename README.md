@@ -15,4 +15,5 @@ https://lbezone.ust.hk/pdfviewer/web/viewer.php?file=aHR0cHM6Ly9sYmV6b25lLnVzdC5
 
 
 
-
+#### Websocket notes   
+https://www.hotbak.net/key/%E4%B8%80%E6%A3%80%E6%B5%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81websocket%E7%BD%91.html   \\ 
