@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <!-- include CSS stylesheets -->
+    <!-- <link rel="stylesheet" href="../css/underground.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- include JQuery library  -->
+    <script type="text/javascript" src="../jQuery/jquery.min.js"></script>
+    <!-- Users script: A very simple usage of JQuery library -->
+    <script type="text/javascript" src="../jQuery/show.js"></script>
+    <title>COMP2011 Lab 9: Student Circle</title>
+</head>
+<style>
+    #sidebar {
+        width: 21%;
+        border-right: 3px solid #dee2e6 !important;
+    }
+</style>
+
+<body>
+    <div class="d-flex" id="body_wrap">
+        <!-- Sidebar -->
+        <div class="show" id="sidebar">
+            <div class="bg-light">
+                <div class="sidebar-heading" style="padding: 0.875rem 1.25rem;">Lab 9</div>
+                <div class="list-group list-group-flush">
+                    <a href="#Intro" class="list-group-item list-group-item-action bg-light">Introduction</a>
+                    <a href="#Game" class="list-group-item list-group-item-action bg-light">Description</a>
+                    <a href="#Task" class="list-group-item list-group-item-action bg-light">Tasks</a>
+                    <!--<a href="#Download" class="list-group-item list-group-item-action bg-light">Downloads</a>-->
+                    <a href="#Output" class="list-group-item list-group-item-action bg-light">Sample Output</a>
+                    <!--<a href="#Hint" class="list-group-item list-group-item-action bg-light">Hint</a>-->
+                    <a href="#Grade" class="list-group-item list-group-item-action bg-light">Grading</a>
+                    <span class="list-group-item list-group-item-action bg-light">Prepared by: <a
+                     href="mailto:fhanab@connect.ust.hk">Feng HAN</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar -->
+        <!-- Page Content -->
+        <div id="main">
+            <!-- Navbar Dropdown -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="col-sm-9">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#sidebar" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://course.cse.ust.hk/comp2011/">Course Webpage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://course.cse.ust.hk/comp2011/forum.html">Online Forum</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Main content -->
+
+            <div class="col-sm-12 col-lg-12 container">
+                <h1>COMP2011 Lab 9</h1>
+
+            <figure class="figure mx-auto d-block">
+                <img src="DLL1.png" class="figure-img mx-auto d-block" width="600" alt="gas station">
+            </figure>
+        </div>
+        <div class="container-fluid border-bottom my-5" id='Intro'>
+
+            <h2>Introduction</h2>
+            <p>
+                This lab will help you to practice C++ linked list.<br> 
+                
+                <br>
+
+        </div>
+        <div class="container-fluid border-bottom my-5" id='Game'>
+
+            <h2>Problem Description</h2>
+            <p>
+               Assume there are 7 students in the linked list. <code>Struct{name, year, ptr1, ptr2}</code>: 
+               
+               Chase, 12,   
+               Dahua, 15
+               Fred, 16
+               Yang, 17
+               Liz, 14
+               Daisy, 13
+               Sam, 15  
+               David, 13   
+               <!-- There are N children in a circle and number them sequentially starting from 1. 
+
+               Now they are designated to start counting from the Wth. When they report for the Sth, the child will go out, and then start counting from the next child, and still register S out of the queue, repeat this until all the children are out of the queue (the number will be reported circularly when the total number is less than S), and find the order in which the children are out of the queue. -->
+
+            </p>
+            <p>
+                <!-- The map is  -->
+            </p>
+            <p>   
+               
+                <!-- However, the robot is just a <a href="https://en.wikipedia.org/wiki/Intelligent_agent">simple reflex agent</a> who maintains no memory, i.e. can <code>NOT</code> "remember" any historical observations. In this sense, an observation in time step t is called <code>state_t</code>, the robot is supposed to make her decision <code>action_t</code> exactly only based on <code>state_t</code> (not any state_t' where t' &lt t). After performing <code>action_t</code>, the robot will be updated with a new observation <code>state_(t+1)</code> and need to refresh her memory, i.e. delete <code>state_t</code> from her mind. -->
+            </p>
+            <p>
+               <!--  The above . -->
+            </p>
+
+
+        </div>
+        <div class="container-fluid border-bottom my-5" id="Task">
+           <h2>Tasks</h2>
+
+            <p> We have implemented a code skeleton for this problem (<a href="lab9_skeleton.zip">lab9_skeleton.zip</a>), in which some parts are left blank with necessary comments. 
+            You need to fill in the blanks marked with <code>TODO</code>. </p>
+            
+            <p>You are not allowed to move any function definition to other files (but you can declare functions in different files).</p>
+            
+           <!--  <p>
+            Some configurations are provided:
+              <ul>
+                <li>For maps, we provid 4 maps in <code>maps.h</code> with specified obstacles. Note that map[x][y] indicates the x-th row and y-th column from the upper left corner.</li>
+                  <ol>
+                    <li>A '.' represents a free slot, while an 'x' represents an obstacle.</li>
+                    <li>After the goal location is specified, it will be represented by a 'g'.</li>
+                    <li>After the program starts, the robot will be represented by a 'O'.</li>
+                    <li>When the robot reaches the goal, it will be marked as a 'G'.</li>
+                  </ol>
+
+                <li>For robot's capabilities, we provide in <code>agent.h</code>:
+                  <ol>
+                    <li>The structure of robot's state, which contains the robot's current location, goal location, obstacles if any detected and the map size.</li>
+                    <li>The set of actions: {N, S, W, E}.</li>
+                    <li>The sensor: can only senses obstacles within a radius of 2 girds.</li>
+                  </ol>
+                </li>
+              </ul>
+            </p> -->
+            
+
+            <p>
+            Specifically, there are five TODOs:
+              <ol>
+                  <li>Implement <code>Add()</code> function in <code>xxx.hpp</code>:
+                    given the structure, you can add a new student with information <code>Struct{name, year, ptr1, ptr2}</code>.
+                  </li>
+                  <li>Implement <code>Delete()</code> function in <code>xxx.hpp</code>:
+                    you can delete a student with all infomation. 
+                  </li>
+                  <li>Implement <code>Print()</code> function in <code>xxx.hpp</code>:
+                    it can print all the students in some year.
+                  </li>
+                  <li>Implement <code>Search()</code> function in <code>xxx.hpp</code>:
+                    check the student in the linked list, then return the students informaton
+                  </li>
+                  <li>You are supposed to check memory leaks in both <code>main.cpp</code> and <code>xxx.hpp</code>, i.e. free all the memory blocks that are dynamically allocated.
+                  </li>
+              </ol>
+            </p>
+
+      <!--       <p>Assumptions:
+              <ol>
+                <li>
+                	Enter the number of children N on the first line (N<=64) -->
+                   <!-- There will be at most one obstacle being detected. -->
+               <!--  </li>
+                <li> -->
+                 <!--  The robot is always initialized in location [0, 0]. -->
+                <!--  	Enter the name of a child on each line (person's name does not exceed 15 characters)
+
+                </li>
+                 <li> -->
+                 <!--  The robot is always initialized in location [0, 0]. -->
+                 	<!-- Enter W, S in the last line, separated by commas
+                    Note W is smaller than S 
+                </li>
+              </ol>
+            </p>
+
+            <p>
+              Note that you only need to complie <code>main.cpp</code>. 
+            </p> -->
+ 
+
+
+        </div>
+        <div class="container-fluid border-bottom my-5" id="Output">
+            <h2>Sample Input and Output</h2>
+            <p>Output the children by name in the order in which they are listed, one name per line
+              Please choose actions <code>new()</code>, <code>delete()</code>, <code>printall()</code>, <code>search()</code> </p>
+
+            <p> For <code>New()</code>,
+                <pre class="shadow p-3 mb-5 bg-white rounded">
+                  Please input Student name, Student Age you want to add: David, 13
+                  <!-- <font color="#FF0000">0</font>
+                  Please specify : -->
+               <!--    <font color="#FF0000">2 2</font> -->
+                  Then linked list look like this: 
+               Chase, 12, 
+               Dahua, 15
+               Fred, 16
+               Yang, 17
+               Liz, 14
+               Daisy, 13
+               Sam, 15  
+               David, 13                    
+			           </pre>
+            </p>
+
+            <p> For <code>Delete()</code>,
+                <pre class="shadow p-3 mb-5 bg-white rounded">
+                  Please input Student name, Student Age you want to detele: Yang, 17
+                 <!--  <font color="#FF0000">1</font>
+                  Please specify : -->
+                  <!-- <font color="#FF0000">4 2</font> -->
+              Then linked list look like this: 
+               Chase, 12, 
+               Dahua, 15
+               Fred, 16
+               Liz, 14
+               Daisy, 13
+               Sam, 15  
+               David, 13                     
+                </pre>
+            </p>
+
+            <p> For <code>Print()</code>, if you want to print the students with age 13
+                <pre class="shadow p-3 mb-5 bg-white rounded">
+                  Please input Student Name you want to search: 13
+				          
+
+              Then linked list look like this: 
+               
+
+               Daisy, 13 
+               David, 13   
+				
+                <!--   <font color="#FF0000">2</font>
+                  Please specify the goal location (except [0, 0]):
+                  <font color="#FF0000">7 4</font> -->
+                               
+                 </pre>
+            </p>
+
+            <p> For <code>Search()</code>，if you want to search the student named Fred
+                 <pre class="shadow p-3 mb-5 bg-white rounded">
+                  Please input Student Name you want to search: Fred
+                  <!-- <font color="#FF0000">1</font>
+                  Please specify : -->
+                 <!--  <font color="#FF0000">4 2</font> -->
+              Then linked list look like this: 
+               
+               Fred, 16
+                                  
+                </pre>
+            </p>
+
+        </div>
+        <!-- block 0 ends here -->
+        <!-- block 1 starts here -->
+        <!-- block 1 ends here -->
+        <!-- block 2 starts here -->
+        <div class="container-fluid border-bottom my-5" id="Grade">
+            <h2>Grading</h2>
+            <p> We have 3 marks for each lab:
+                <ul>
+                    <li>By attending a lab, the student gets 1 point for attendance (but only if it is clear that the student does put in some effort).</li>
+                    <li>By completing the lab exercise correctly and answering TAs' question (if there is a question) correctly, the student gets the remaining 2 more points.</li>
+                    <li>You are required to turn on the camera when you demonstrate your program to
+					the TA.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="mx-auto d-flex justify-content-center"> The lab page is maintained by HAN, Feng (fhanab@connect.ust.hk)
+        </div>
+    </div>
+    <!-- main ends here -->
+    </div>
+    <!-- Bootstrap JS import -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Menu Toggle Script (typescript) -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#body_wrap").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>
